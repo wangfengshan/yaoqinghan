@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GaAqpw5SYc4ToCLGjd7bGIyvLZRvMrxY"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!--第一屏开始-->
+      <div class="swiper-slide one">
+      
+        <div class="conent">
+     
+          <img class="conent-two ani" src="img/ooo.png" alt=""  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+        </div>
+        <div class="midden">
+          <ul>
+            <li class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1.5s" swiper-animate-delay="4s">盛邦</li>
+            <li class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="5.5s"></li>
+            <li class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="6s"></li>
+            <li class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="7s">双选</li>
+            <li class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="7.5s">会</li>
+          </ul>
+        </div>
+      </div>
+      <!--第一屏结束-->
+      <!--第二屏开始-->
+      <div class="swiper-slide two">
+        <div class="top ani" swiper-animate-effect="rollIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">
+          <img src="img/2.jpg" alt="">
+        </div>
+        <div class="center ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1.5s" swiper-animate-delay="3.5s">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="bottom ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="2s">
+          <img src="img/3.jpg" alt="">
+        </div>
+      </div>
+      <!--第二屏结束-->
+      <!--第三屏开始-->
+      <div class="swiper-slide there" >
+        <div class="center">
+           <p class="huiyiyi">学校简介</p>
+            <div class="guojia">
+                一是与国家的高职院校或本科院校的校校合作。为部分学员解决全日制大专学历或函授本科学历，保证技能和学历兼得。为进入企业解决学历“敲门砖”的难题，同时增强学员就业的竞争优势，提高就业质量。
+                二是与国内领先企业及当地的优秀企业的校企合作。通过和国内领先企业合作由于校企的密切合作关系还为学员的就业提供了广阔的选择空间。
+            </div>
+        </div>
+      </div>
+      <!--第三屏结束-->
+      <div class="swiper-slide four">
+        <div style="width: 86%;height: 60%;border: 1px solid rgb(204, 204, 204);overflow: hidden;position: relative;z-index: 0;
+        background-color: rgb(243, 241, 236);color: rgb(0, 0, 0);text-align: left;" id="map">
+        </div>
+      </div>
+       <div class="swiper-slide five" >
+        <div class="top"><p>联系我们</p></div>
+          <div class="end-conter ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="2s" swiper-animate-delay="1.1s">
+          <p><input class="end-one ani" type="text" placeholder="姓名" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="1.3s"></p>
+          <p><input class="end-two ani" type="text" placeholder="手机" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"></p>
+          <p><input class="end-there ani" type="text" placeholder="人数" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="1.7s"></p>
+          <p><input class="end-four ani" type="text" placeholder="备注" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="1.9s"></p>
+          <p><input class="end-five ani" type="submit" value="提交" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="2.1s"></p>
+        </div>
+      </div>
+     
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->
+
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!--音乐开始-->
+<div id="music">
+  <img id="imgbg" src="img/music.gif" alt="">
+  <img id="imgmc" src="img/music_off.png" alt="">
+  <audio id="audio" src="img/bgmusic.mp3" autoplay loop></audio>
+</div>
+ <!-- 音乐结束-->
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/swiper.animate1.0.2.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
